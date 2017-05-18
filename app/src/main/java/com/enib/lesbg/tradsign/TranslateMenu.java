@@ -11,3 +11,5 @@ public class TranslateMenu extends Activity {
         setContentView(R.layout.activity_translate_menu);
     }
 }
+
+

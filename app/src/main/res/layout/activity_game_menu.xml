@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enib.lesbg.tradsign.ParamMenu">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RadioGroup
+            android:id="@+id/GameModeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/GameMode"
+            android:checkedButton="@+id/gifBut">
+
+            <RadioButton
+                android:id="@+id/gifBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gifMode" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animate2DMode" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/GameMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gameMode"
+            android:textSize="21sp"
+            android:orientation="horizontal"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/AnswerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answerMode"
+            android:textSize="30sp"
+            android:layout_above="@+id/gameEditTextHint"
+            android:layout_alignLeft ="@id/GameMode"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/gameEditTextHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/validate"
+            android:textSize="30sp"
+            android:hint="@string/gameEditTextHint"/>
+
+
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/validate"
+            style="@style/buttonT2" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

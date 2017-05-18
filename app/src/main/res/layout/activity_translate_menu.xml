@@ -7,9 +7,11 @@
     tools:context="com.enib.lesbg.tradsign.TranslateMenu">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp">
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:padding="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <!--<TextView
             android:id="@+id/TranslatMode"
@@ -41,15 +43,7 @@
 
         </RadioGroup>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_below="@id/TranslatModeRadioGroup"
-            android:layout_marginTop="50dp"
-            android:inputType="text"
-            android:lines="1"
-            android:hint="@string/translatEditTextHint" />
+
 
     </RelativeLayout>
 

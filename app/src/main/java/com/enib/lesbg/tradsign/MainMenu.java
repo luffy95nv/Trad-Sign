@@ -34,6 +34,16 @@ public class MainMenu extends Activity {
                 startActivity(new Intent(getApplicationContext(), ParamMenu.class));
             }
         });
+
+
+        gameButton = (Button)findViewById(R.id.GameButton);
+        gameButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
+            }
+        });
     }
 
 
